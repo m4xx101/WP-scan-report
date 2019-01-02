@@ -1,0 +1,91 @@
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.4.1
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[34m[i][0m Updating the Database ...
+[34m[i][0m Update completed.
+
+[32m[+][0m URL: https://thehackergiraffe.com/
+[32m[+][0m Started: Thu Jan  3 05:35:47 2019
+
+Interesting Finding(s):
+
+[32m[+][0m https://thehackergiraffe.com/
+ | Interesting Entries:
+ |  - x-powered-by: PHP/7.0.33
+ |  - x-turbo-charged-by: LiteSpeed
+ |  - expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+ |  - server: cloudflare
+ |  - cf-ray: 492f53cadaf2aa1a-SIN
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m https://thehackergiraffe.com/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m https://thehackergiraffe.com/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m https://thehackergiraffe.com/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: https://thehackergiraffe.com/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m WordPress version 5.0.2 identified (Latest, released on 2018-12-19).
+ | Detected By: Rss Generator (Passive Detection)
+ |  - https://thehackergiraffe.com/feed/, <generator>https://wordpress.org/?v=5.0.2</generator>
+ |  - https://thehackergiraffe.com/comments/feed/, <generator>https://wordpress.org/?v=5.0.2</generator>
+
+[32m[+][0m WordPress theme in use: write
+ | Location: https://thehackergiraffe.com/wp-content/themes/write/
+ | Latest Version: 2.1.1 (up to date)
+ | Last Updated: 2018-12-25T00:00:00.000Z
+ | Readme: https://thehackergiraffe.com/wp-content/themes/write/readme.txt
+ | Changelog: https://thehackergiraffe.com/wp-content/themes/write/changelog.txt
+ | Style URL: https://thehackergiraffe.com/wp-content/themes/write/style.css?ver=2.1.1
+ | Style Name: Write
+ | Style URI: http://themegraphy.com/wordpress-themes/write/
+ | Description: Write is a minimal WordPress theme for users focused on writing. It's designed to keep decorations t...
+ | Author: Themegraphy
+ | Author URI: http://themegraphy.com/
+ |
+ | Detected By: Css Style (Passive Detection)
+ |
+ | Version: 2.1.1 (80% confidence)
+ | Detected By: Style (Passive Detection)
+ |  - https://thehackergiraffe.com/wp-content/themes/write/style.css?ver=2.1.1, Match: 'Version: 2.1.1'
+
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Finished: Thu Jan  3 05:36:02 2019
+[32m[+][0m Requests Done: 47
+[32m[+][0m Cached Requests: 4
+[32m[+][0m Data Sent: 9.478 KB
+[32m[+][0m Data Received: 19.491 MB
+[32m[+][0m Memory used: 43.68 MB
+[32m[+][0m Elapsed time: 00:00:14
